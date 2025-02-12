@@ -2,8 +2,8 @@ from rest_framework.views import APIView
 from rest_framework.parsers import MultiPartParser
 from rest_framework.response import Response
 from rest_framework import status
-from ..models import AnalysisSession, UploadedFile
-from ..services.comparison_service import FileComparator
+from .models import AnalysisSession, UploadedFile
+from .services.comparison_service import FileComparator
 
 class FileUploadView(APIView):
     parser_classes = (MultiPartParser,)
